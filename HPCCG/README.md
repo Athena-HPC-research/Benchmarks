@@ -1,5 +1,5 @@
 This is the documentation regarding the HPCCG benchmark from https://github.com/Mantevo/HPCCG
-
+In the makefile just put mpic++ for both CXX and LINKER. 
 To run this benchmark the usual MPI and OpenMP installation is needed.
 Then the Makefile should be edited to include: the C++ compiler, the location of the MPI headers(depends on the platform somewhere in /usr)
 
