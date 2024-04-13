@@ -1,4 +1,8 @@
 This is the documentation regarding the HPCCG benchmark from https://github.com/Mantevo/HPCCG
+To find the related files do: `sudo apt install apt-file` and then can do `apt-file list <package> | grep .so` (or .h to find the header files)
+this helps to find the related files for it.
+Also `sudo apt install libopenmpi-dev libopenmpi3` to download OpenMPI. 
+
 In the makefile just put mpic++ for both CXX and LINKER. 
 To run this benchmark the usual MPI and OpenMP installation is needed.
 Then the Makefile should be edited to include: the C++ compiler, the location of the MPI headers(depends on the platform somewhere in /usr)
