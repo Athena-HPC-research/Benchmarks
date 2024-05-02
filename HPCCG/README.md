@@ -5,7 +5,7 @@ Also `sudo apt install libopenmpi-dev libopenmpi3` to download OpenMPI.
 
 In the makefile just put mpic++ for both CXX and LINKER. 
 To run this benchmark the usual MPI and OpenMP installation is needed.
-Then the Makefile should be edited to include: the C++ compiler, the location of the MPI headers(depends on the platform somewhere in /usr)
+Then the Makefile should be edited to include: the C++ compiler, the location of the MPI headers(depends on the platform somewhere in /usr, can be found by using `apt-file list libopenmpi-dev`)
 
 Then a `make -lmpi_cxx` and an `mpirun -np N ./test_HPCCG nx ny nz` is enough to make it run
 
