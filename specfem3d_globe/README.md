@@ -13,7 +13,7 @@ cd EXAMPLES/regional_Greece_small/
 ./run_this_example.sh
 ```
 
-Caution: These commands require: GNU Autotools, a fortran compiler(`sudo apt install gfortran`), there are also other versions of the fortran compiler but here the classic 95 version should be enough. Also per sub-benchmark different things might need to be done. Also the MPI processes number is calculated by them so depending on the system there might be warnings about not enough slots.
+Caution: These commands require: GNU Autotools, a fortran compiler(`sudo apt install gfortran`), there are also other versions of the fortran compiler but here the classic 95 version should be enough. Also per sub-benchmark different things might need to be done. Also the MPI processes number is calculated by them so depending on the system and the specific benchmark chosen, there might be warnings about not enough slots.
 
 Notes:
 In the ueabs repo there are slurm job submission scripts which we can use to understand how to submit it properly.
