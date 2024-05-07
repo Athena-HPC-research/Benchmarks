@@ -18,6 +18,7 @@ Do this:
 sudo apt install python-is-python3
 ```
 
+The results of each benchmark are in the OUTPUT_FILES directory.
 
 Caution: These commands require: GNU Autotools, a fortran compiler(`sudo apt install gfortran`), there are also other versions of the fortran compiler but here the classic 95 version should be enough. Also per sub-benchmark different things might need to be done. Also the MPI processes number is calculated by them so depending on the system and the specific benchmark chosen, there might be warnings about not enough slots.
 
@@ -28,9 +29,12 @@ From the ueabs benchmarking documentation:
 
 
 Working benchmarks for:
+(there is a readme in each folder, and it is mostly running ./run_this_example.sh)
 
 - regional_Greece_small
 - regional_Greece_noise_small (requires a change to run_generate_S_squared to use the python executable and pip3 to install numpy in order to be run)
+- regional_Mexico_noise_non_uniform (might produce this error: `Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.`)
+- regional_simultaneous runs (again ./run_this_example.sh, it requires around 7.5gigs of ram, it might need a --oversubscribe flag on mpi, as it requires 16 slots for 4 simultaneous runs, it can be more customised, it gets everything to 100% all CPUs in my laptop with --oversubscribe, it takes a few minutes )
 
 
 Benchmark TODOs:
