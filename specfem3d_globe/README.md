@@ -12,6 +12,12 @@ make all
 cd EXAMPLES/regional_Greece_small/
 ./run_this_example.sh
 ```
+if you get this error: `/usr/bin/env: ‘python’: No such file or directory`
+Do this:
+```
+sudo apt install python-is-python3
+```
+
 
 Caution: These commands require: GNU Autotools, a fortran compiler(`sudo apt install gfortran`), there are also other versions of the fortran compiler but here the classic 95 version should be enough. Also per sub-benchmark different things might need to be done. Also the MPI processes number is calculated by them so depending on the system and the specific benchmark chosen, there might be warnings about not enough slots.
 
