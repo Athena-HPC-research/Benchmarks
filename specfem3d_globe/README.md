@@ -33,9 +33,9 @@ Working benchmarks for:
 
 - regional_Greece_small
 - regional_Greece_noise_small (requires a change to run_generate_S_squared to use the python executable and pip3 to install numpy in order to be run)
-- regional_Mexico_noise_non_uniform (might produce this error: `Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.`)
+- regional_Mexico_noise_non_uniform (for some reason it produces this error: `Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.`)
 - regional_simultaneous runs (again ./run_this_example.sh, it requires around 7.5gigs of ram, it might need a --oversubscribe flag on mpi, as it requires 16 slots for 4 simultaneous runs, it can be more customised, it gets everything to 100% all CPUs in my laptop with --oversubscribe, it takes a few minutes )
-- -regional_small_benchmark_to_test_very_simple_earth (around 10gigs of ram, also needed the --oversubscribe flag as it requires 24 MPI processes, CPUs to 100%, 99% the time)
+- -regional_small_benchmark_to_test_very_simple_earth (around 10gigs of ram, also needed the --oversubscribe flag as it requires 24 MPI processes, CPUs to 100%, 99% the time, it took around 2hrs on my laptop with the --oversubscribe flag)
 
 
 Benchmark TODOs:
