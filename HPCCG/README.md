@@ -18,3 +18,10 @@ A script is written that generates the commands in a separate run-commands.sh fi
 To get the final-output.csv run the following command in the respective architecture folder:
 It requires the test_HPCCG executable to be there and ofc mpi to be available(headers + .so dynamic libs + mpirun executable in path)
 `bash script.sh strongOut && chmod +x run-commands.sh && bash run-commands.sh && bash yaml-to-csv.sh strongOut*`
+
+Results for Single Core on my laptop:
+- 64 64 1024 21secs (around 2gigs of RAM)
+- 128 128 1024 1.12mins (around 7gigs of RAM)
+- 150 150 1024 1.42mins (around 8gigs of ram)
+- 175 175 1024 2.33mins (around 14gigs of ram)
+- 190 190 1024 3.17mins (it died the second time i tried to run it >16gigs of ram, using swap so numbers start to get foggy)
