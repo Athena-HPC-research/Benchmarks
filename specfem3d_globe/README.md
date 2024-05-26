@@ -2,6 +2,8 @@
 
 The github repo is [here](https://github.com/SPECFEM/specfem3d_globe/).
 
+Does not give FLOPs but execution time and many more details regarding the specific benchmark steps.
+
 Their example can easily be run with the following commands.
 
 ```
@@ -31,7 +33,7 @@ From the ueabs benchmarking documentation:
 Working benchmarks for:
 (there is a readme in each folder, and it is mostly running ./run_this_example.sh and maybe messing around with run_mesher_solver.bash)
 
-- regional_Greece_small
+- regional_Greece_small (7.6gigs on my Ubuntu laptop, CPUs not completely 100% all the time, took around 3 minutes to run)
 - regional_Greece_noise_small (requires a change to run_generate_S_squared to use the python executable and pip3 to install numpy in order to be run)
 - regional_Mexico_noise_non_uniform (for some reason it produces this error: `Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.`)
 - regional_simultaneous runs (again ./run_this_example.sh, it requires around 7.5gigs of ram, it might need a --oversubscribe flag on mpi, as it requires 16 slots for 4 simultaneous runs, it can be more customised, it gets everything to 100% all CPUs in my laptop with --oversubscribe, it takes a few minutes )
