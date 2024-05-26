@@ -6,7 +6,7 @@ It is now a package in apt repositories
 
 Just run `sudo apt install cp2k`
 
-Doing an `apt-file list cp2k` will show you where the files you need are.
+Doing an `apt-file list cp2k` will show you where the files you need are.(might need to first install the package apt-file to use this command)
 
 With mpi properly installed just do:
 
