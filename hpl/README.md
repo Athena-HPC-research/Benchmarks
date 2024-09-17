@@ -16,5 +16,9 @@ Be Careful, the makefiles assume that the hpl benchmark is in the ~/hpl folder s
 To be run it needs an HPL.dat file which we can produce by heading over to this [website](https://www.advancedclustering.com/act_kb/tune-hpl-dat-file/), and filling in as input: nodes -> 8, 2Gigs each(i might be wrong, can't remember)->2048 and cores per node -> 2.
 
 Also if there are any problems related to makefiles not being selected properly, just change the "arch=" line with "arch=linux", in the Make.top and Make.linux files.
+
+It is important that either the same user is on all nodes, or that the compiled files for OpenMPI are in the same folder(in our case i had to do a /home/max/compiled folder and install OpenMPI there in order to achieve my goal).
+
+Also to use the compiled mpi version more easily just do an `export PATH=<new-ompi-path>:$PATH`, otherwise you will need to mess around with --prefix and specifying the absolute path for mpirun.
  
 
