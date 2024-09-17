@@ -19,6 +19,8 @@ Also if there are any problems related to makefiles not being selected properly,
 
 It is important that either the same user is on all nodes, or that the compiled files for OpenMPI are in the same folder(in our case i had to do a /home/max/compiled folder and install OpenMPI there in order to achieve my goal).
 
-Also to use the compiled mpi version more easily just do an `export PATH=<new-ompi-path>:$PATH`, otherwise you will need to mess around with --prefix and specifying the absolute path for mpirun.
+Also to use the compiled mpi version more easily just do an `export PATH=<new-ompi-path>/bin:$PATH`, otherwise you will need to mess around with --prefix and specifying the absolute path for mpirun. Also you might need to add `export LD_LIBRARY_PATH=<new-ompi-path>/lib:$LD_LIBRARY_PATH`.
+
+The GFlops increase from 2 hosts does not seem to be wholly there, something should be going on. 
  
 
